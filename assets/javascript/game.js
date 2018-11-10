@@ -26,9 +26,12 @@ document.onkeyup = function (event) {
     if (event.key === computerGuess) {
         wins++;
         guesses = 9;
-        choices.push(event.key);
+        // choices.push(event.key);
+        alert("You guessed it! Ur outta this world!");
         computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
         console.log(computerGuess);
+        choices = [""];
+
     }
 
     
